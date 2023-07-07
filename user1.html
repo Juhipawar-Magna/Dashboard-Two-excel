@@ -1,0 +1,2568 @@
+
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-image: linear-gradient(to right, #DECBA4, #3E5151);
+            }
+            h1 {
+                color: #3E5151;
+                margin-top: 1px;
+                font-size: 50px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 20px;
+            }
+            th, td {
+                border: 1px solid #000;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #3E5151;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading-container">
+            <title>Dashboard</title>
+            <h1>Table Data</h1>
+            <canvas id="chart"></canvas>
+        </div>
+        <div>
+            <table>
+               <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Type</th>
+      <th>Subject</th>
+      <th>State</th>
+      <th>Assigned User</th>
+      <th>Variant</th>
+      <th>Project</th>
+      <th>SW Release Major</th>
+      <th>SW Release Minor</th>
+      <th>SW Release Patch</th>
+      <th>Total number of tests executed?</th>
+      <th>Number of tests Passed</th>
+      <th>Number of tests Failed</th>
+      <th>Test Report Checkpoint Label</th>
+      <th>Test Data Checkpoint Label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>5692238</td>
+      <td>Validation Item</td>
+      <td>DTC C1170 98 Transfer case Range Actuator Performance(Temperature High)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5692239</td>
+      <td>Validation Item</td>
+      <td>DTC C1170 64 Transfer case Range Actuator Performance (Position Mismatch)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>13</td>
+      <td>7</td>
+      <td>6</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>5692248</td>
+      <td>Validation Item</td>
+      <td>DTC C0632 11 Front axle Actuator control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>112</td>
+      <td>112</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>5692249</td>
+      <td>Validation Item</td>
+      <td>DTC C0632 12 Front axle Actuator control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>112</td>
+      <td>112</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5692250</td>
+      <td>Validation Item</td>
+      <td>DTC C0632 13 Front axle Actuator control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>64</td>
+      <td>64</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5692252</td>
+      <td>Validation Item</td>
+      <td>DTC C116F 13 Front axle Actuator Switch circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>49</td>
+      <td>49</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>5692253</td>
+      <td>Validation Item</td>
+      <td>DTC C119C 67 Front axle system performance</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>80</td>
+      <td>80</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>5692257</td>
+      <td>Validation Item</td>
+      <td>DTC C11AD 29 Transfer Case Range Position Sensor Circuit (RPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>119</td>
+      <td>119</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>5692258</td>
+      <td>Validation Item</td>
+      <td>DTC C11AD 38 Transfer Case Range Position Sensor Circuit (RPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>124</td>
+      <td>123</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>5692262</td>
+      <td>Validation Item</td>
+      <td>DTC C05FB 11 Transfer case Range Actuator Position Sensor circuit line A (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>107</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>5692263</td>
+      <td>Validation Item</td>
+      <td>DTC C05FB 12 Transfer case Range Actuator Position Sensor circuit line A (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>102</td>
+      <td>6</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>5692264</td>
+      <td>Validation Item</td>
+      <td>DTC C05FB 13 Transfer case Range Actuator Position Sensor circuit line A (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>108</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>5692267</td>
+      <td>Validation Item</td>
+      <td>DTC C11B9 11 Transfer case Range Actuator Position Sensor circuit line B (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>108</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>5692268</td>
+      <td>Validation Item</td>
+      <td>DTC C11B9 12 Transfer case Range Actuator Position Sensor circuit line B (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>102</td>
+      <td>6</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>5692269</td>
+      <td>Validation Item</td>
+      <td>DTC C11B9 13 Transfer case Range Actuator Position Sensor circuit line B (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>107</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>5692283</td>
+      <td>Validation Item</td>
+      <td>DTC C05DD 99 Transfer case Clutch Performance</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>5692289</td>
+      <td>Validation Item</td>
+      <td>DTC U1643 - Lost Communication with TCM</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>116</td>
+      <td>112</td>
+      <td>4</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>5692290</td>
+      <td>Validation Item</td>
+      <td>DTC U0131 - Lost Communication with EPS</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>80</td>
+      <td>78</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>5692294</td>
+      <td>Validation Item</td>
+      <td>DTC U1818 - Lost Communications with ECM / PCM on CAN3</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>60</td>
+      <td>59</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>5692302</td>
+      <td>Validation Item</td>
+      <td>DTC U1610 - Lost Communication with EBCM On CAN2</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>147</td>
+      <td>132</td>
+      <td>15</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>5747117</td>
+      <td>Validation Item</td>
+      <td>DTC U0420 - Invalid Data Received from EPS</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>45</td>
+      <td>30</td>
+      <td>15</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>5747118</td>
+      <td>Validation Item</td>
+      <td>DTC U0422 - Invalid Data Received from BCM</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>55</td>
+      <td>54</td>
+      <td>1</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>5747119</td>
+      <td>Validation Item</td>
+      <td>DTC U0447  Invalid Data Received from CGM</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>34</td>
+      <td>33</td>
+      <td>1</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>5747123</td>
+      <td>Validation Item</td>
+      <td>SW 38.1 CI Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Adsul, Latesh (M00aaec)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>12</td>
+      <td>11</td>
+      <td>1</td>
+      <td>N.A.</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>5692225</td>
+      <td>Validation Item</td>
+      <td>RID_0209_UpdateProgrammedStateIndicatorForPartition</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>5692228</td>
+      <td>Validation Item</td>
+      <td>RID_0292_TransferCaseClutchRangeActuatorPositonLearn</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>23</td>
+      <td>19</td>
+      <td>4</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>5692241</td>
+      <td>Validation Item</td>
+      <td>DTC U3000 4B Transfer case H-bridge performance : Over Temp</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>15</td>
+      <td>15</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>5692244</td>
+      <td>Validation Item</td>
+      <td>DTC C1162 13 Transfer case Range Actuator lock control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>158</td>
+      <td>150</td>
+      <td>8</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>5692246</td>
+      <td>Validation Item</td>
+      <td>DTC C05FF 54 Transfer case Range Actuator Not learned</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>8</td>
+      <td>4</td>
+      <td>4</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>5692247</td>
+      <td>Validation Item</td>
+      <td>DTC C15AC 00 Transfer Case Range Actuator Learn Failed</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>51</td>
+      <td>10</td>
+      <td>41</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>5692251</td>
+      <td>Validation Item</td>
+      <td>DTC C116F 12 Front axle Actuator Switch circuit</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>121</td>
+      <td>121</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>5692256</td>
+      <td>Validation Item</td>
+      <td>DTC C11AD 13 Transfer Case Range Position Sensor Circuit (RPS)</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>119</td>
+      <td>118</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>5692271</td>
+      <td>Validation Item</td>
+      <td>DTC C15AB 11 Transfer case Range Actuator Position Sensor Reference Voltage circuit (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>83</td>
+      <td>73</td>
+      <td>10</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>5692272</td>
+      <td>Validation Item</td>
+      <td>DTC C15AB 12 Transfer case Range Actuator Position Sensor Reference Voltage circuit (IPS)</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>83</td>
+      <td>73</td>
+      <td>10</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>5692273</td>
+      <td>Validation Item</td>
+      <td>DTC C15AB 13 Transfer case Range Actuator Position Sensor Reference Voltage circuit (IPS)</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>83</td>
+      <td>83</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>5692274</td>
+      <td>Validation Item</td>
+      <td>DTC C15C1 13 Transfer Case Range Actuator Position Sensor Return Circuit (IPS Sensor Return Signal)</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>83</td>
+      <td>83</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>5692278</td>
+      <td>Validation Item</td>
+      <td>DTC C116F 1C Front axle Actuator Switch circuit</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>75</td>
+      <td>75</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>5692284</td>
+      <td>Validation Item</td>
+      <td>DTC C05DD 64 Transfer case Clutch Performance</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>7</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>5692296</td>
+      <td>Validation Item</td>
+      <td>DTC U0402 - Invalid Data Received from TCM</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>91</td>
+      <td>62</td>
+      <td>29</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>5692298</td>
+      <td>Validation Item</td>
+      <td>DTC U0420 - Invalid Data Received from EPS</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>71</td>
+      <td>48</td>
+      <td>23</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>5692299</td>
+      <td>Validation Item</td>
+      <td>DTC U0422 - Invalid Data Received from BCM</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>80</td>
+      <td>78</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>5692300</td>
+      <td>Validation Item</td>
+      <td>DTC U0447  Invalid Data Received from CGM</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>43</td>
+      <td>42</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>5692301</td>
+      <td>Validation Item</td>
+      <td>DTC U0452  Invalid Data Received from SDN</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>66</td>
+      <td>41</td>
+      <td>25</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>5692312</td>
+      <td>Validation Item</td>
+      <td>I/O Control 56A6 - Front Axle Engagement System</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>5692313</td>
+      <td>Validation Item</td>
+      <td>I/O Control 56A3 - Range Actuator Control</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>10</td>
+      <td>8</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>5692314</td>
+      <td>Validation Item</td>
+      <td>I/O Control 56A2 - Range Selection Control</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>32</td>
+      <td>26</td>
+      <td>6</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>5692316</td>
+      <td>Validation Item</td>
+      <td>FOM DID D8D9 Tests</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>70</td>
+      <td>67</td>
+      <td>3</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>5692327</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Mode Shift Control + Operational Modes</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>163</td>
+      <td>163</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>5692332</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Neutral Shift Control + Neutral LED</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>501</td>
+      <td>501</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>5692336</td>
+      <td>Validation Item</td>
+      <td>Periodic Data Identifiers (pDIDs) and DynamicallyDefinedDataIdentifier (DDDIDs)</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>30</td>
+      <td>29</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>5692338</td>
+      <td>Validation Item</td>
+      <td>Snapshot Data/Failure Record</td>
+      <td>Validation Item Final Review</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>5692339</td>
+      <td>Validation Item</td>
+      <td>TDA Tests</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>48</td>
+      <td>47</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>5692340</td>
+      <td>Validation Item</td>
+      <td>DID VIN write</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>5747112</td>
+      <td>Validation Item</td>
+      <td>RID_0205_SecuredECUKeyProvisionData</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>5747113</td>
+      <td>Validation Item</td>
+      <td>DTC U0073 00 GMLAN Bus OFF</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>34</td>
+      <td>34</td>
+      <td>0</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>5747120</td>
+      <td>Validation Item</td>
+      <td>DTC U1960 00 Key Table Not Provisioned</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>7</td>
+      <td>6</td>
+      <td>1</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>5747122</td>
+      <td>Validation Item</td>
+      <td>Snapshot Data/Failure Record</td>
+      <td>Validation Item Closure</td>
+      <td>Dharankar, Priti (dp016945)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>59</td>
+      <td>0</td>
+      <td>59</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>5749694</td>
+      <td>Validation Item</td>
+      <td>Smoke Test</td>
+      <td>Validation Item Closure</td>
+      <td>Gadave, Pravin (gadavep)</td>
+      <td>vSport</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>107</td>
+      <td>99</td>
+      <td>8</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>5692221</td>
+      <td>Validation Item</td>
+      <td>Data Identifiers (DID)5670</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>181</td>
+      <td>145</td>
+      <td>36</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>5692222</td>
+      <td>Validation Item</td>
+      <td>RID_0200_ProvisionSecurityPeripheralGeneralKeys</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>7</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>5692223</td>
+      <td>Validation Item</td>
+      <td>RID_0204_ECUKeyProvisionData</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>5692224</td>
+      <td>Validation Item</td>
+      <td>RID_0205_SecuredECUKeyProvisionData</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>5692226</td>
+      <td>Validation Item</td>
+      <td>RID_021E_DiagInitiateExtendedReflashH</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>5692227</td>
+      <td>Validation Item</td>
+      <td>RID_0272_ProvisionSecurityPeripheralAllKeys</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>7</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>5692231</td>
+      <td>Validation Item</td>
+      <td>RID_FF01_CheckProgrammingDependencies</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>21</td>
+      <td>20</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>5692232</td>
+      <td>Validation Item</td>
+      <td>RID_FF00_Erase_Memory</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>5692233</td>
+      <td>Validation Item</td>
+      <td>RID 0x03D5 FOM Reset Diagnostic Command Start</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>6</td>
+      <td>4</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>5692234</td>
+      <td>Validation Item</td>
+      <td>RID 0x03D9 Provision Security Peripheral Multiple Keys</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>7</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>5692285</td>
+      <td>Validation Item</td>
+      <td>DTC C05DD F3 Transfer case Clutch Performance</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>11</td>
+      <td>11</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>5692288</td>
+      <td>Validation Item</td>
+      <td>DTC U0073 00 GMLAN Bus OFF</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>58</td>
+      <td>56</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>5692306</td>
+      <td>Validation Item</td>
+      <td>DTC U1960 00 Key Table Not Provisioned</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>7</td>
+      <td>5</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>5692307</td>
+      <td>Validation Item</td>
+      <td>DTC U1962 00 Unable To Authenticate Serial Data Message</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>152</td>
+      <td>88</td>
+      <td>64</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>5692308</td>
+      <td>Validation Item</td>
+      <td>I/O Control  4E3F AtmtcAllWhlDrvMfgClutchCtrlSrvcToolRqst</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>85</td>
+      <td>77</td>
+      <td>8</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>5692309</td>
+      <td>Validation Item</td>
+      <td>I/O Control 4E40 AtmtcAllWhlDrvMfgClutchPrcntgServiceToolRqst</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>82</td>
+      <td>80</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>5692310</td>
+      <td>Validation Item</td>
+      <td>I/O Control 4E41ResetClutchOvertempCounterServiceToolRequest</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>36</td>
+      <td>35</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>5692311</td>
+      <td>Validation Item</td>
+      <td>I/O Control 4E42 RstTrnsfrCsCltchRngActuPstnLrnCntrSrvcTlRqst</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>12</td>
+      <td>11</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>5692315</td>
+      <td>Validation Item</td>
+      <td>I/O Control 56A5 - Range Actuator Lock Control</td>
+      <td>Validation Item Closure</td>
+      <td>Gupta, Divya1 (gd011419)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>9</td>
+      <td>8</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>5692240</td>
+      <td>Validation Item</td>
+      <td>DTC C11A4 77 Block Shift(Unable to complete shift)</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>5692245</td>
+      <td>Validation Item</td>
+      <td>DTC C116E 67 Transfer case Range Actuator Lock performance</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>5692266</td>
+      <td>Validation Item</td>
+      <td>DTC C05FB 38 Transfer case Range Actuator Position Sensor circuit line A (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>121</td>
+      <td>121</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>5692270</td>
+      <td>Validation Item</td>
+      <td>DTC C11B9 64 Transfer case Range Actuator Position Sensor circuit line B (IPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>121</td>
+      <td>121</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>5692275</td>
+      <td>Validation Item</td>
+      <td>DTC C10BA 11 - Front Axle Actuator Power Relay Circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>79</td>
+      <td>79</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>5692276</td>
+      <td>Validation Item</td>
+      <td>DTC C10BA 12 - Front Axle Actuator Power Relay Circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>43</td>
+      <td>42</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>5692277</td>
+      <td>Validation Item</td>
+      <td>DTC C10BA 13 - Front Axle Actuator Power Relay Circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>79</td>
+      <td>77</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>5692281</td>
+      <td>Validation Item</td>
+      <td>DTC C05DD F4 Transfer case Clutch Performance</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>5692282</td>
+      <td>Validation Item</td>
+      <td>DTC C05DD 98 Transfer case Clutch Performance</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>73</td>
+      <td>73</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>5692286</td>
+      <td>Validation Item</td>
+      <td>DTC C11B3 64 Transfer Case Range Actuator Position - Range Startup Position Correlation</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>175</td>
+      <td>175</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>5692287</td>
+      <td>Validation Item</td>
+      <td>DTC C15A9 64 Transfer Case Range Actuator Position - Range Runtime Position Correlation</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>138</td>
+      <td>138</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>5692303</td>
+      <td>Validation Item</td>
+      <td>DTC U1611 - Lost Communication with ECM On CAN2</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>177</td>
+      <td>170</td>
+      <td>7</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>5692318</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Power Moding Requirements</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>365</td>
+      <td>351</td>
+      <td>14</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>5692319</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Electronic Parking Brake</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>98</td>
+      <td>98</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>5692320</td>
+      <td>Validation Item</td>
+      <td>[Functional] - 4WD CAN Status Information</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>220</td>
+      <td>220</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>5692321</td>
+      <td>Validation Item</td>
+      <td>[Functional] - External Torque Control</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>129</td>
+      <td>129</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>5692322</td>
+      <td>Validation Item</td>
+      <td>[Functional] - External Torque Protection Strategy</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>31</td>
+      <td>31</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>5692324</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Clutch Calibration</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>622</td>
+      <td>622</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>5692325</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Position Initilization</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>1</td>
+      <td>4</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>5692326</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Range Shift Control</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>388</td>
+      <td>388</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>5692328</td>
+      <td>Validation Item</td>
+      <td>[Functional] - Front Axle Control</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>103</td>
+      <td>103</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>5692329</td>
+      <td>Validation Item</td>
+      <td>[Stress Test] - Ignition Cycle Stress</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>15</td>
+      <td>14</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>5692330</td>
+      <td>Validation Item</td>
+      <td>[Stress Test] - Power Interruption Test</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>5692331</td>
+      <td>Validation Item</td>
+      <td>[Stress Test] - CAN Bus Stress</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>5692333</td>
+      <td>Validation Item</td>
+      <td>[Stress Test] - DPS Flash Stress</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NP0, 31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>9</td>
+      <td>9</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>5692341</td>
+      <td>Validation Item</td>
+      <td>Fault Recovery 1 Tests</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>17</td>
+      <td>17</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>5747114</td>
+      <td>Validation Item</td>
+      <td>DTC U0401 - Invalid Data Received from ECM</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>93</td>
+      <td>77</td>
+      <td>16</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>5747115</td>
+      <td>Validation Item</td>
+      <td>DTC U0402 - Invalid Data Received from TCM</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>63</td>
+      <td>53</td>
+      <td>10</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>5747116</td>
+      <td>Validation Item</td>
+      <td>DTC U0418 - Invalid Data Received from EBCM</td>
+      <td>Validation Item Closure</td>
+      <td>Kshirsagar, Shreyas (ks019349)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>93</td>
+      <td>79</td>
+      <td>14</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>5692235</td>
+      <td>Validation Item</td>
+      <td>DTC C115E 11 Transfer case Range Actuator control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>158</td>
+      <td>150</td>
+      <td>8</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>5692236</td>
+      <td>Validation Item</td>
+      <td>DTC C115E 12 Transfer case Range Actuator control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>158</td>
+      <td>151</td>
+      <td>7</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>5692237</td>
+      <td>Validation Item</td>
+      <td>DTC C115E 13 Transfer case Range Actuator control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>158</td>
+      <td>150</td>
+      <td>8</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>5692242</td>
+      <td>Validation Item</td>
+      <td>DTC C1162 11 Transfer case Range Actuator lock control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>158</td>
+      <td>150</td>
+      <td>8</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>5692243</td>
+      <td>Validation Item</td>
+      <td>DTC C1162 12 Transfer case Range Actuator lock control circuit</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>158</td>
+      <td>150</td>
+      <td>8</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>5692305</td>
+      <td>Validation Item</td>
+      <td>DTC U3003 17 System Voltage High</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>60</td>
+      <td>60</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>5723419</td>
+      <td>Validation Item</td>
+      <td>CG4879 - OTA - Happy Path &amp; Prerequisite SW38 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>16</td>
+      <td>13</td>
+      <td>3</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>5723420</td>
+      <td>Validation Item</td>
+      <td>CG4748 - OTA REFLASH PROGRAMMING RELIABILITY SW38 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>60</td>
+      <td>60</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>5723421</td>
+      <td>Validation Item</td>
+      <td>CG3388 - UDS Diva Testing- Partial Testing SW38 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>5747126</td>
+      <td>Validation Item</td>
+      <td>CG4879 - OTA - Happy Path SW38.1 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>5747127</td>
+      <td>Validation Item</td>
+      <td>CG3388 - UDS Diva Testing- Partial Testing SW38.1 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>5747128</td>
+      <td>Validation Item</td>
+      <td>CG3531 - GM Diagnostic Infrastructure Global B Validation Procedure - Partial Testing SW38.1 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Kulkarni, Sneha (snehkul3)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>5692220</td>
+      <td>Validation Item</td>
+      <td>Proper Shutdown, including Partial Networks</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>25</td>
+      <td>25</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>5692291</td>
+      <td>Validation Item</td>
+      <td>DTC U0140 - Lost Communication with BCM</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>113</td>
+      <td>109</td>
+      <td>4</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>5692292</td>
+      <td>Validation Item</td>
+      <td>DTC U0146  Lost Communication with CGM</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>11</td>
+      <td>11</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>5692293</td>
+      <td>Validation Item</td>
+      <td>DTC U0151 - Lost Communication with SDM</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>49</td>
+      <td>48</td>
+      <td>1</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>5692295</td>
+      <td>Validation Item</td>
+      <td>DTC U0401 - Invalid Data Received from ECM</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>140</td>
+      <td>118</td>
+      <td>22</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>5692297</td>
+      <td>Validation Item</td>
+      <td>DTC U0418 - Invalid Data Received from EBCM</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>128</td>
+      <td>113</td>
+      <td>15</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>5692304</td>
+      <td>Validation Item</td>
+      <td>DTC U3003 16 System voltage Low</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>105</td>
+      <td>105</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>5692334</td>
+      <td>Validation Item</td>
+      <td>DPS Flash</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>16</td>
+      <td>16</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>5692335</td>
+      <td>Validation Item</td>
+      <td>Key provisioning stress test</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>5723417</td>
+      <td>Validation Item</td>
+      <td>CG3877 - GB CAN Tester Infra. - Serial Data  Partial Testing SW38 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>34</td>
+      <td>27</td>
+      <td>7</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>5723418</td>
+      <td>Validation Item</td>
+      <td>CG4117 - MAC Testing Partial Testing SW38 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>24</td>
+      <td>21</td>
+      <td>3</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>5747121</td>
+      <td>Validation Item</td>
+      <td>Key provisioning stress test</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>10</td>
+      <td>2</td>
+      <td>8</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>5747124</td>
+      <td>Validation Item</td>
+      <td>CG3877 - GB CAN Tester Infra. - Serial Data  Partial Testing SW38.1 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>5747125</td>
+      <td>Validation Item</td>
+      <td>CG4117 - MAC Testing Partial Testing SW38.1 Testing</td>
+      <td>Validation Item Closure</td>
+      <td>Patil, Vaibhav (pv010507)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>43</td>
+      <td>43</td>
+      <td>0</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>5692219</td>
+      <td>Validation Item</td>
+      <td>Smoke Test</td>
+      <td>Validation Item Closure</td>
+      <td>Sayyad, Fariyal (sayyadf)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>657</td>
+      <td>619</td>
+      <td>38</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>5692254</td>
+      <td>Validation Item</td>
+      <td>DTC C11AD 11 Transfer Case Range Position Sensor Circuit (RPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Sayyad, Fariyal (sayyadf)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>108</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>5692255</td>
+      <td>Validation Item</td>
+      <td>DTC C11AD 12 Transfer Case Range Position Sensor Circuit (RPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Sayyad, Fariyal (sayyadf)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>108</td>
+      <td>102</td>
+      <td>6</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>5692259</td>
+      <td>Validation Item</td>
+      <td>DTC C15AA 11 Transfer case Range Position Sensor Reference Voltage Circuit (RPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Sayyad, Fariyal (sayyadf)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>83</td>
+      <td>73</td>
+      <td>10</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>5692260</td>
+      <td>Validation Item</td>
+      <td>DTC C15AA 12 Transfer case Range Position Sensor Reference Voltage Circuit (RPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Sayyad, Fariyal (sayyadf)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>83</td>
+      <td>73</td>
+      <td>10</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>5692261</td>
+      <td>Validation Item</td>
+      <td>DTC C15AA 13 Transfer case Range Position Sensor Reference Voltage Circuit (RPS)</td>
+      <td>Validation Item Closure</td>
+      <td>Sayyad, Fariyal (sayyadf)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>0</td>
+      <td>2</td>
+      <td>83</td>
+      <td>83</td>
+      <td>0</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+      <td>CP_SW38.0.2_Cad_165</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>5747111</td>
+      <td>Validation Item</td>
+      <td>Smoke Test</td>
+      <td>Validation Item Closure</td>
+      <td>Sayyad, Fariyal (sayyadf)</td>
+      <td>31xx-2_NQH</td>
+      <td>/GM/T1XX/470 GLOBAL B</td>
+      <td>SW38</td>
+      <td>1</td>
+      <td>1</td>
+      <td>657</td>
+      <td>645</td>
+      <td>12</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+      <td>CP_SW38.1.1_Cad_165</td>
+    </tr>
+  </tbody>
+</table>
+            </table>
+        </div>
+    </body>
+</html>
